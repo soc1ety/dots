@@ -3,6 +3,6 @@ lil place to store chaos with no tutorial provided, just your imagination and gu
 
 ## included
 
-packages installed
-i3
+packages installed  
+i3  
 zsh
