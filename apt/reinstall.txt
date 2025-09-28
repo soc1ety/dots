@@ -1,0 +1,1 @@
+xargs -a installed.txt sudo apt install -y
