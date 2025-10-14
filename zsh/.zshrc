@@ -29,5 +29,9 @@ bindkey "\e[A" history-beginning-search-backward
 # PATH stuff
 export PATH="$PATH:/home/$USER/.local/bin"
 
-# enables fzf 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zsh plugins
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh

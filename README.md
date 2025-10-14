@@ -5,4 +5,5 @@ lil place to store chaos with no tutorial provided, just your imagination and gu
 
 packages installed  
 i3  
-zsh
+zsh  
+helix

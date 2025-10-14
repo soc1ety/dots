@@ -1,0 +1,13 @@
+theme = "tokyonight"
+
+[editor]
+mouse = true
+line-number = "absolute"
+cursorline = true
+auto-completion = true
+auto-format = true
+auto-info = true
+
+
+[editor.file-picker]
+ignore = true 
