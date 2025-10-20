@@ -17,6 +17,7 @@ ncdu
 ntfs-3g
 rofi
 rsync
+systemd-timesyncd
 thunar
 tmux
 vim
