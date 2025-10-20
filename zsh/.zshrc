@@ -19,6 +19,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias mv='mv -i'
 alias cat='batcat'
+alias vim='hx'
 
 # keybinds
 bindkey '^[[1;5C' forward-word

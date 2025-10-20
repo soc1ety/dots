@@ -34,6 +34,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal --hide-menubar
 
+# lockscreen
+bindsym $mod+l exec betterlockscreen -l dim
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -66,9 +69,6 @@ bindsym $mod+p exec flameshot gui
 
 # launches tunar
 bindsym $mod+n exec thunar
-
-# lockscreen
-bindsym $mod+l exec /home/anon/.local/bin/betterlockscreen -l
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
