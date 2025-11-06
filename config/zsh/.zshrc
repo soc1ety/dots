@@ -20,6 +20,9 @@ alias diff='diff --color=auto'
 alias mv='mv -i'
 alias cat='batcat'
 alias vim='hx'
+alias stfg="sudo tailscale file get"
+alias stfc="sudo tailscale file cp"
+alias reboot="sudo reboot"
 
 # keybinds
 bindkey '^[[1;5C' forward-word
@@ -28,7 +31,11 @@ bindkey "\e[B" history-beginning-search-forward
 bindkey "\e[A" history-beginning-search-backward
 
 # PATH stuff
-export PATH="$PATH:/home/$USER/.local/bin"
+path=(
+  $path
+  /home/$USER/.config/scripts
+  /home/$USER/.local/bin
+)
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -36,3 +43,8 @@ export PATH="$PATH:/home/$USER/.local/bin"
 # zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# auto starts tmux at shell login
+if command -v tmux  &>/dev/null && [ -z "$TMUX" ]; then
+  tmux 
+fi

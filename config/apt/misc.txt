@@ -1,0 +1,15 @@
+# uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# sublime text
+echo -e 'Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable/\nSigned-By: /etc/apt/keyrings/sublimehq-pub.asc' | sudo tee /etc/apt/sources.list.d/sublime-text.sources
+
+sudo apt update && sudo apt install sublime-text
+
+# tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
+# spotify
+curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
