@@ -5,6 +5,7 @@ distrobox
 fastfetch
 feh
 flameshot
+fonts-3270
 gcc
 gh
 git
@@ -21,6 +22,7 @@ ncdu
 ntfs-3g
 okular
 okular-extra-backends
+openssh-server
 rofi
 rsync
 systemd-timesyncd
@@ -28,6 +30,7 @@ thunar
 tmux
 usbutils
 vim
+wezterm
 wget
 xclip
 xfce4-terminal

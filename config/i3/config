@@ -33,7 +33,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar
+bindsym $mod+Return exec wezterm
 
 # lockscreen
 bindsym $mod+l exec betterlockscreen -l dim

@@ -23,6 +23,8 @@ alias vim='hx'
 alias stfg="sudo tailscale file get"
 alias stfc="sudo tailscale file cp"
 alias reboot="sudo reboot"
+alias rm="rm -i"
+alias pysrv='python3 -m http.server'
 
 # keybinds
 bindkey '^[[1;5C' forward-word
