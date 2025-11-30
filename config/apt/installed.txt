@@ -35,5 +35,6 @@ wezterm
 wget
 xclip
 xfce4-terminal
+zathura
 zsh
 zsh-syntax-highlighting
