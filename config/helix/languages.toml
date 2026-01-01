@@ -1,0 +1,5 @@
+[[language]]
+name = "nim"
+formatter = {command = "nph", args = ["--stdin", "--stdin-filename %{buffer_name}"]}
+language-servers = ["nimlangserver"]
+indent = { tab-width = 2, unit = "  "}

@@ -14,18 +14,20 @@ setopt HIST_IGNORE_ALL_DUPS
 autoload -U compinit && compinit
 
 # aliases
-alias ls='ls --color=auto -hv'
-alias grep='grep --color=auto'
-alias diff='diff --color=auto'
-alias mv='mv -i'
-alias cat='batcat'
-alias vim='hx'
+alias ls="ls --color=auto -hv"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias mv="mv -i"
+alias cat="batcat"
+alias vim="hx"
 alias stfg="sudo tailscale file get"
 alias stfc="sudo tailscale file cp"
 alias reboot="sudo reboot"
 alias rm="rm -i"
 alias cp="cp -v"
 alias pysrv="python3 -m http.server"
+alias st="cloudflare-speed-cli"
+alias rsync="rsync -avh --progress"
 
 # keybinds
 bindkey '^[[1;5C' forward-word
@@ -38,6 +40,7 @@ path=(
   $path
   /home/$USER/.config/scripts
   /home/$USER/.local/bin
+  /home/$USER/.nimble/bin
 )
 
 # fzf
@@ -46,6 +49,8 @@ path=(
 # zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 
 # auto starts tmux at shell login
 if command -v tmux  &>/dev/null && [ -z "$TMUX" ]; then
