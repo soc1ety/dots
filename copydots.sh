@@ -8,7 +8,7 @@ sourceDir="$HOME/.config"
 targetDir="$HOME/git/dots/config" 
 
 # which dots we want to keep
-appsConfigList=("i3" "tmux" "helix" "zsh" "scripts" "wezterm")
+appsConfigList=("i3" "tmux" "zsh" "scripts")
 
 # loops through each to copy correspond config
 for app in "${appsConfigList[@]}"; do
